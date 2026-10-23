@@ -1,0 +1,18 @@
+# Gradle
+.gradle/
+build/
+buildSrc/.gradle/
+buildSrc/build/
+
+# Kotlin and the IntelliJ Platform Gradle Plugin (downloaded IDEs, sandbox)
+.kotlin/
+buildSrc/.kotlin/
+.intellijPlatform/
+
+# Junie's working plans; its guidelines (.junie/AGENTS.md, .junie/rules/) are meant to be shared
+.junie/plans/
+
+# IntelliJ; the shared run configurations live in .run/
+.idea/
+*.iml
+out/
