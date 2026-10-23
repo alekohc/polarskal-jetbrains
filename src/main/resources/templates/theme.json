@@ -199,11 +199,11 @@
     "toolbar-selected-bg-hovered": "{{ accent@40 }}",
     "toolbar-run-bg-hovered": "{{ accent@85 }}",
     "toolbar-stop-bg-hovered": "{{ danger@85 }}",
-    "selection-bg-active": "{{ accent@30 }}",
-    "selection-bg-active-muted": "{{ accent@20 }}",
+    "selection-bg-active": "{{ accent@14 }}",
+    "selection-bg-active-muted": "{{ accent@10 }}",
     "selection-bg-inactive": "{{ surfaceHover }}",
     "selection-bg-hovered": "{{ textPrimary/6 }}",
-    "tab-selected-bg-active": "{{ accent@18 }}",
+    "tab-selected-bg-active": "{{ accent@14 }}",
     "tab-selected-bg-inactive": "{{ surfaceHover }}",
     "tab-selected-border-active": "{{ accent }}",
     "tab-selected-border-inactive": "{{ textMuted }}",
@@ -242,7 +242,7 @@
     "toggle-border": "{{ border }}"
   },
   "ui": {
-    "EditorTabs.underlinedTabBackground": "{{ accent@18 }}",
+    "EditorTabs.underlinedTabBackground": "{{ accent@14 }}",
     "EditorTabs.inactiveUnderlinedTabBackground": "{{ surfaceHover }}",
     "MainWindow.Tab.background": "{{ surfaceSunken }}",
     "MainWindow.FullScreeControl.Background": "{{ surfaceHover }}",

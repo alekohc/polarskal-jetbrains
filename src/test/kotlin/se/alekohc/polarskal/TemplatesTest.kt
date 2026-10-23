@@ -54,6 +54,12 @@ class TemplatesTest {
     }
 
     @Test
+    fun olderShellKeepsTheOldCodeColours() {
+        val older = Palette.parse(javaClass.getResource("/palettes/dark.json")!!.readText().replace(Regex(""""code\w+": "#\w+",?\s*"""), ""))!!
+        assertEquals(older.resolve("{{ focus }}"), older.resolve("{{ codeAnnotation }}"))
+    }
+
+    @Test
     fun brokenFileIsNoPalette() {
         assertEquals(null, Palette.parse("{\"accent\": \"#7fe3c0\""))
         assertEquals(null, Palette.parse("{\"accent\": \"#7fe3c0\"}"))

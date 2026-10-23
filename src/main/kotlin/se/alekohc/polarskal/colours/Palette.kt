@@ -23,10 +23,10 @@ class Palette(private val colours: Map<String, Color>) {
             if (name == "neutral") {
                 return mix(light, dark, (n - 10) / 150.0)
             }
-            val c = colours[name] ?: return null
+            val c = colour(name) ?: return null
             return if (n <= 80) mix(c, dark, 1 - (80 - n) / 70.0 * 0.85) else mix(c, light, 1 - (n - 80) / 80.0 * 0.85)
         }
-        val c = colours[name] ?: return null
+        val c = colour(name) ?: return null
         return when {
             op.isEmpty() -> c
             op == "@" && n != null -> mix(c, colours.getValue("surfacePanel"), n / 100.0)
@@ -34,6 +34,9 @@ class Palette(private val colours: Map<String, Color>) {
             else -> null
         }
     }
+
+    // A shell from before the code colours does not write them; those keep the colour they had then.
+    private fun colour(name: String): Color? = colours[name] ?: OLDER[name]?.let(colours::get)
 
     // Every reference in `text` as #rrggbb (#rrggbbaa with alpha), without the # for an .icls; `vars` are plain text.
     fun render(text: String, hash: Boolean, vars: Map<String, String> = emptyMap()): String = TEMPLATE.replace(text) { m ->
@@ -46,6 +49,9 @@ class Palette(private val colours: Map<String, Color>) {
         private val REF = Regex("""\{\{\s*([A-Za-z]+)\s*(?:([@/~])\s*(\d+))?\s*}}""")
         private val ENTRY = Regex(""""(\w+)"\s*:\s*"(#[0-9a-fA-F]{6})"""")
         private val REQUIRED = listOf("surfaceSunken", "surfacePanel", "surfaceRaised", "textPrimary")
+        private val OLDER = mapOf("codeKeyword" to "accentAlt", "codeString" to "warning", "codeNumber" to "focus",
+                                  "codeFunction" to "accent", "codeType" to "ice", "codeField" to "textPrimary",
+                                  "codeParameter" to "textPrimary", "codeAnnotation" to "focus", "codeEscape" to "focus")
 
         val TEMPLATE = Regex("""\{\{[^}]*}}""")
 

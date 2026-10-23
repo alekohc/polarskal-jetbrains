@@ -26,8 +26,10 @@ class PolarskalService : Disposable {
         ApplicationManager.getApplication().messageBus.connect(this)
             .subscribe(LafManagerListener.TOPIC, LafManagerListener {
                 Applier.themeLoaded()
+                ApplicationManager.getApplication().invokeLater { Applier.inheritLanguageKeys() }
                 reload(file)
             })
+        ApplicationManager.getApplication().invokeLater { Applier.inheritLanguageKeys() }
         reload(file)
     }
 

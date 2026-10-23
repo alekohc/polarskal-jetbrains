@@ -20,5 +20,14 @@
     "warning": "#a15c00",
     "danger": "#c0262d",
     "textOnAccent": "#ffffff",
-    "scrim": "#0b0f18"
+    "scrim": "#0b0f18",
+    "codeKeyword": "#611ce3",
+    "codeString": "#804a0a",
+    "codeNumber": "#0550c2",
+    "codeFunction": "#05634e",
+    "codeType": "#0654ad",
+    "codeField": "#046171",
+    "codeParameter": "#9e0289",
+    "codeAnnotation": "#a9075b",
+    "codeEscape": "#535d07"
 }
