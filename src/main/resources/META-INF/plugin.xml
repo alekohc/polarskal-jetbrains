@@ -1,5 +1,5 @@
 <idea-plugin>
-    <id>se.alekoh.polarskal.theme</id>
+    <id>se.alekohc.polarskal.theme</id>
     <name>Polarskal Theme</name>
     <vendor>Polarskal</vendor>
     <description><![CDATA[
@@ -12,6 +12,6 @@
     <extensions defaultExtensionNs="com.intellij">
         <themeProvider id="polarskal" path="/themes/polarskal.theme.json"/>
         <themeProvider id="polarskal-light" path="/themes/polarskal-light.theme.json"/>
-        <postStartupActivity implementation="se.alekoh.polarskal.Startup"/>
+        <postStartupActivity implementation="se.alekohc.polarskal.Startup"/>
     </extensions>
 </idea-plugin>

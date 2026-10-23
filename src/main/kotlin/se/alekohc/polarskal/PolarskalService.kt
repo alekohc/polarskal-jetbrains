@@ -1,4 +1,4 @@
-4package se.alekoh.polarskal
+package se.alekohc.polarskal
 
 import com.intellij.ide.ui.LafManagerListener
 import com.intellij.openapi.Disposable
@@ -6,7 +6,7 @@ import com.intellij.openapi.application.ApplicationManager
 import com.intellij.openapi.components.Service
 import com.intellij.openapi.diagnostic.logger
 import com.intellij.openapi.util.Disposer
-import se.alekoh.polarskal.colours.Palette
+import se.alekohc.polarskal.colours.Palette
 import java.nio.file.Files
 import java.nio.file.Path
 import java.util.concurrent.atomic.AtomicBoolean

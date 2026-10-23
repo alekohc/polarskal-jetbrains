@@ -1,4 +1,4 @@
-package se.alekoh.polarskal
+package se.alekohc.polarskal
 
 import com.intellij.ide.ui.LafManager
 import com.intellij.openapi.application.ApplicationManager
@@ -8,7 +8,7 @@ import com.intellij.openapi.editor.colors.EditorColorsManager
 import com.intellij.openapi.editor.colors.TextAttributesKey
 import com.intellij.openapi.editor.markup.TextAttributes
 import org.jdom.Element
-import se.alekoh.polarskal.colours.Palette
+import se.alekohc.polarskal.colours.Palette
 import java.awt.Color
 import java.awt.Window
 import javax.swing.SwingUtilities

@@ -1,4 +1,4 @@
-package se.alekoh.polarskal
+package se.alekohc.polarskal
 
 import org.jdom.Element
 import org.junit.Assert.assertEquals
@@ -6,7 +6,7 @@ import org.junit.Assert.assertFalse
 import org.junit.Assert.assertNotNull
 import org.junit.Assert.assertTrue
 import org.junit.Test
-import se.alekoh.polarskal.colours.Palette
+import se.alekohc.polarskal.colours.Palette
 import java.awt.Color
 
 class TemplatesTest {

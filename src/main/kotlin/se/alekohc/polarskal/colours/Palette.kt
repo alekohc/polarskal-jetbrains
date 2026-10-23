@@ -1,4 +1,4 @@
-package se.alekoh.polarskal.colours
+package se.alekohc.polarskal.colours
 
 import java.awt.Color
 

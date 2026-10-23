@@ -1,4 +1,4 @@
-package se.alekoh.polarskal
+package se.alekohc.polarskal
 
 import com.intellij.openapi.Disposable
 import java.nio.file.ClosedWatchServiceException

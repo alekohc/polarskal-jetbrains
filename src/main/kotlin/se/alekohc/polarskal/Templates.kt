@@ -1,8 +1,8 @@
-package se.alekoh.polarskal
+package se.alekohc.polarskal
 
 import com.intellij.openapi.util.JDOMUtil
 import org.jdom.Element
-import se.alekoh.polarskal.colours.Palette
+import se.alekohc.polarskal.colours.Palette
 
 // The templates the bundled themes are built from (build.gradle.kts), read again so the live colours land where they did.
 object Templates {

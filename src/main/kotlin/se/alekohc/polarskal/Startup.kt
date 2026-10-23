@@ -1,4 +1,4 @@
-package se.alekoh.polarskal
+package se.alekohc.polarskal
 
 import com.intellij.openapi.components.service
 import com.intellij.openapi.project.Project
