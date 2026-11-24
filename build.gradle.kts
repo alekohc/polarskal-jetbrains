@@ -3,7 +3,7 @@ import se.alekohc.polarskal.colours.Palette
 
 plugins {
     id("org.jetbrains.kotlin.jvm") version "2.4.21"
-    id("org.jetbrains.intellij.platform") version "2.19.0"
+    id("org.jetbrains.intellij.platform") version "2.20.1"
 }
 
 group = "se.alekohc.polarskal"
@@ -17,7 +17,7 @@ repositories {
 
 dependencies {
     intellijPlatform {
-        intellijIdea("2026.2")
+        intellijIdea("2026.3")
         testFramework(TestFrameworkType.Platform)
     }
     testImplementation("junit:junit:4.13.2")
